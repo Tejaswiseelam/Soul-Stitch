@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+    h1 {
+        text-align: center;
+        color: #444;
+        margin-bottom: 20px;
+    }
+    .cart-table {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .cart-table th, .cart-table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+    .cart-table th {
+        background-color: #f8f8f8;
+    }
+    .total {
+        font-weight: bold;
+        text-align: right;
+    }
+    .checkout {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .checkout button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #444;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .checkout button:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+
+<h1>Your Cart</h1>
+
+<table class="cart-table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Eco-Friendly T-Shirt</td>
+            <td>$25.00</td>
+            <td><input type="number" value="1" min="1" style="width: 50px;"></td>
+            <td>$25.00</td>
+        </tr>
+        <tr>
+            <td>Sustainable Denim Jacket</td>
+            <td>$50.00</td>
+            <td><input type="number" value="1" min="1" style="width: 50px;"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>Organic Cotton Dress</td>
+            <td>$45.00</td>
+            <td><input type="number" value="1" min="1" style="width: 50px;"></td>
+            <td>$45.00</td>
+        </tr>
+        <tr>
+            <td class="total" colspan="3">Total</td>
+            <td class="total">$120.00</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="checkout">
+    <button onclick="alert('Proceeding to checkout...')">Checkout</button>
+</div>
+
+</body>
+</html>

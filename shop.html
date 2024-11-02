@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .collection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 300px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            padding: 15px;
+            text-align: center;
+        }
+        .description h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 0 0 10px;
+        }
+        .description p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Latest Collection</h1>
+        <div class="collection">
+            <div class="item">
+                <img src="collection1.jpeg" alt="Collection Item 1">
+                <div class="description">
+                    <h2>Elegant Jeans</h2>
+                    <p>A beautiful dress for all occasions.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="collection2.jpeg" alt="Collection Item 2">
+                <div class="description">
+                    <h2>Casual Shirt</h2>
+                    <p>Comfortable and stylish for everyday wear.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="collection3.jpg" alt="Collection Item 3">
+                <div class="description">
+                    <h2>Trendy Sneakers</h2>
+                    <p>Add a touch of elegance to your outfit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="collection4.jpeg" alt="Collection Item 4">
+                <div class="description">
+                    <h2>Facial Magic</h2>
+                    <p>Perfect blend of comfort and style.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
